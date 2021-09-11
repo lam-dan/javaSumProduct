@@ -2,14 +2,13 @@ import java.util.Scanner;
 
 public class SumProduct {
 	public static void main (String[] args){
-		String input1;
-		String input2;
+		String input;
 		Scanner terminal = new Scanner(System.in);
 
 		System.out.println("Please enter a number: ");
 		while (!terminal.hasNextInt()) {
-			input1 = terminal.next();
-			System.out.printf("\"%s\" is not a valid number.\n", input1);
+			input = terminal.next();
+			System.out.printf("\"%s\" is not a valid number.\n", input);
 			System.out.println("Please enter a valid number:");
 		}
 		int num1 = Integer.parseInt(terminal.next());
@@ -17,8 +16,8 @@ public class SumProduct {
 
 		System.out.println("Please enter another number: ");
 		while (!terminal.hasNextInt()) {
-			input2 = terminal.next();
-			System.out.printf("\"%s\" is not a valid number.\n", input2);
+			input = terminal.next();
+			System.out.printf("\"%s\" is not a valid number.\n", input);
 			System.out.println("Please enter a valid number:");
 		}
 		int num2 = Integer.parseInt(terminal.next());

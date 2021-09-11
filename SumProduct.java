@@ -3,6 +3,10 @@ import java.util.Scanner;
 public class SumProduct {
 	public static void main (String[] args){
 		String input;
+		int sum;
+		int num1;
+		int num2;
+		int product;
 		Scanner terminal = new Scanner(System.in);
 
 		System.out.println("Please enter a number: ");
@@ -11,7 +15,7 @@ public class SumProduct {
 			System.out.printf("\"%s\" is not a valid number.\n", input);
 			System.out.println("Please enter a valid number:");
 		}
-		int num1 = Integer.parseInt(terminal.next());
+		num1 = Integer.parseInt(terminal.next());
 		System.out.println("You have entered "+ num1 + ".");
 
 		System.out.println("Please enter another number: ");
@@ -20,11 +24,11 @@ public class SumProduct {
 			System.out.printf("\"%s\" is not a valid number.\n", input);
 			System.out.println("Please enter a valid number:");
 		}
-		int num2 = Integer.parseInt(terminal.next());
+		num2 = Integer.parseInt(terminal.next());
 		System.out.println("You have entered "+ num2 + ".");
 		System.out.println("You have entered "+ num1 + " and " + num2 + ".");
-		int sum = num1 + num2;
-		int product = num1 * num2;
+		sum = num1 + num2;
+		product = num1 * num2;
 		System.out.println("The sum of these numbers are: " + sum + ".");
 		System.out.println("The product of these numbers are: " + product + ".");
 		}
